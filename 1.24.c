@@ -14,9 +14,9 @@ int pila[PILAMAX];
 
 int empujar( int nuevo )
 	
-	// La funcion empujar tiene mete elementos en la pila
 	
-{              // abre la funcion empujar
+	
+{          
 	
 	
 	if ( superior + 1 >= PILAMAX )
@@ -29,21 +29,21 @@ int empujar( int nuevo )
 	return( OK);
 	
 	
-}             // Cierra la funcion empujar
+}           
 
 
 int extraer()
-{                // La funcion extrae  elementos de la pila
+{              
 	
 	return( pila[superior--] );
 	
-}                // Cierra la funcion extraer
+}               
 
 
 int vacio()
 	
 	
-{              // Abre vacio
+{            
 	
 	if( superior < 0 )
 		return(VERDADERO);
@@ -115,7 +115,7 @@ int Revisa_Parentesis( int datos[])
 	}	
 	if ( ADENTRO == comentario )
 		
-		// Es decir, si nunca se cerro un inicio de comentario, entonces es un errror
+	
 		
 		return (ERROR);
 	
