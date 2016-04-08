@@ -1,32 +1,26 @@
 #include <stdio.h>
 
-#define MAX_STRING_LENGTH 100
+#define MAXIMO 100
 
-int main(void)
-{
-	/*
-	for (i = 0; i < lim-1 && (c=getchar()) != '\n' && c != EOF; ++i)
-	s[i] = c;
-	*/
+int main(){
 	
-	int i = 0,
-		lim = MAX_STRING_LENGTH,
-		c;
-	char s[MAX_STRING_LENGTH];
-	
-	while (i < (lim - 1))
-	{
-		c = getchar();
+	int rango = 0;
+	int limite=MAXIMO;
+	int ingresar;
+	char valores_ingresados[MAXIMO];
+	for (int i=0; i<3;i++)
+		printf("Hola");
+	while (rango < (limite - 1)){
 		
-		if (c == EOF)
+		ingresar = getchar();
+		if (ingresar == EOF)
 			break;
-		else if (c == '\n')
+		else if (ingresar == '\n')
 			break;
-		
-		s[i++] = c;
+		valores_ingresados[rango++] = ingresar;
 	}
 	
-	s[i] = '\0';   /* terminate the string */
+	valores_ingresados[rango] = '\0';
 	
 	return 0;
 }
