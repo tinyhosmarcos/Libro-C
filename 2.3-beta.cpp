@@ -1,3 +1,7 @@
+/*Escriba la función htoi(s), que convierte una cadena de dígitos
+hexadecimales (incluyendo Ox ó OX en forma optativa) en su valor entero equiva­
+lente. Los dígitos permitidos son del 0 al 9, de la a a la f, y de la A a la F. */
+
 #include <stdio.h>
 #include <stdlib.h>
 #define MAXIMO 10
@@ -34,7 +38,7 @@ int main(){
 		contador_entrada=0;
 	}
 	
-	input_hex[contador_bucle]='\0';
+	input_hex[contador_bucle]='\0';	
 	num_hexa=strtol(input_hex, &p, 16);
 	printf("%d",num_hexa);
 	return 0;
