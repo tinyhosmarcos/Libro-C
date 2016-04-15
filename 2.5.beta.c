@@ -1,3 +1,8 @@
+/*	Escriba la función any(sl,s2), que regresa la primera posición de
+	la cadena si en donde se encuentre cualquier carácter de la cadena s2, o -1 si 
+	si no contiene caracteres de s2. (La función de biblioteca estándar strpbrk hace
+	el mismo trabajo pero regresa un apuntador a la posición encontrada.)
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

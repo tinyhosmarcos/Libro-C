@@ -4,7 +4,7 @@
 void itoa(int n, char s[], int width);
 void reverse(char s[]);
 
-int main(void) {
+int main(){
 	char buffer[20];
 	
 	itoa(INT_MIN, buffer, 7);
@@ -26,7 +26,7 @@ void itoa(int n, char s[], int width) {
 	if (sign < 0)
 		s[i++] = '-';
 	
-	while (i < width )    /*  Only addition to original function  */
+	while (i < width ) 
 		s[i++] = ' ';
 	
 	s[i] = '\0';
